@@ -3,18 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5557C43A2BF505470048F976 /* ZenzaiMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5557C4392BF505470048F976 /* ZenzaiMobileApp.swift */; };
 		5557C43C2BF505470048F976 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5557C43B2BF505470048F976 /* ContentView.swift */; };
 		5557C43E2BF505490048F976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5557C43D2BF505490048F976 /* Assets.xcassets */; };
-		5557C4412BF505490048F976 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5557C4402BF505490048F976 /* Preview Assets.xcassets */; };
-		5557C4492BF5058F0048F976 /* KanaKanjiConverterModule in Frameworks */ = {isa = PBXBuildFile; productRef = 5557C4482BF5058F0048F976 /* KanaKanjiConverterModule */; };
-		5557C44B2BF5058F0048F976 /* KanaKanjiConverterModuleWithDefaultDictionary in Frameworks */ = {isa = PBXBuildFile; productRef = 5557C44A2BF5058F0048F976 /* KanaKanjiConverterModuleWithDefaultDictionary */; };
-		5557C44D2BF5058F0048F976 /* SwiftUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 5557C44C2BF5058F0048F976 /* SwiftUtils */; };
-		5557C44F2BF5059E0048F976 /* ggml-model-Q8_0.gguf in Resources */ = {isa = PBXBuildFile; fileRef = 5557C44E2BF5059E0048F976 /* ggml-model-Q8_0.gguf */; };
+		559ECB9D2E4CBD500003578F /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 559ECB9C2E4CBD500003578F /* Core */; };
+		55C1DC0D2E4CA46700AC3260 /* ggml-model-Q5_K_M.gguf in Resources */ = {isa = PBXBuildFile; fileRef = 55C1DC0C2E4CA46700AC3260 /* ggml-model-Q5_K_M.gguf */; };
+		55C1DC112E4CA4BE00AC3260 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 55C1DC102E4CA4BE00AC3260 /* Core */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,18 +20,21 @@
 		5557C4392BF505470048F976 /* ZenzaiMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenzaiMobileApp.swift; sourceTree = "<group>"; };
 		5557C43B2BF505470048F976 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5557C43D2BF505490048F976 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5557C4402BF505490048F976 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5557C44E2BF5059E0048F976 /* ggml-model-Q8_0.gguf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ggml-model-Q8_0.gguf"; sourceTree = "<group>"; };
+		559ECB9A2E4CBD220003578F /* Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Core; sourceTree = "<group>"; };
+		55C1DC0C2E4CA46700AC3260 /* ggml-model-Q5_K_M.gguf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ggml-model-Q5_K_M.gguf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		559ECBA02E4CBE9B0003578F /* Preview Content */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Preview Content"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5557C4332BF505470048F976 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5557C44D2BF5058F0048F976 /* SwiftUtils in Frameworks */,
-				5557C44B2BF5058F0048F976 /* KanaKanjiConverterModuleWithDefaultDictionary in Frameworks */,
-				5557C4492BF5058F0048F976 /* KanaKanjiConverterModule in Frameworks */,
+				55C1DC112E4CA4BE00AC3260 /* Core in Frameworks */,
+				559ECB9D2E4CBD500003578F /* Core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +44,7 @@
 		5557C42D2BF505470048F976 = {
 			isa = PBXGroup;
 			children = (
+				559ECB9A2E4CBD220003578F /* Core */,
 				5557C4382BF505470048F976 /* ZenzaiMobile */,
 				5557C4372BF505470048F976 /* Products */,
 			);
@@ -59,21 +61,13 @@
 		5557C4382BF505470048F976 /* ZenzaiMobile */ = {
 			isa = PBXGroup;
 			children = (
+				559ECBA02E4CBE9B0003578F /* Preview Content */,
+				55C1DC0C2E4CA46700AC3260 /* ggml-model-Q5_K_M.gguf */,
 				5557C4392BF505470048F976 /* ZenzaiMobileApp.swift */,
 				5557C43B2BF505470048F976 /* ContentView.swift */,
-				5557C44E2BF5059E0048F976 /* ggml-model-Q8_0.gguf */,
 				5557C43D2BF505490048F976 /* Assets.xcassets */,
-				5557C43F2BF505490048F976 /* Preview Content */,
 			);
 			path = ZenzaiMobile;
-			sourceTree = "<group>";
-		};
-		5557C43F2BF505490048F976 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				5557C4402BF505490048F976 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,12 +84,15 @@
 			buildRules = (
 			);
 			dependencies = (
+				559ECB9F2E4CBD5D0003578F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				559ECBA02E4CBE9B0003578F /* Preview Content */,
 			);
 			name = ZenzaiMobile;
 			packageProductDependencies = (
-				5557C4482BF5058F0048F976 /* KanaKanjiConverterModule */,
-				5557C44A2BF5058F0048F976 /* KanaKanjiConverterModuleWithDefaultDictionary */,
-				5557C44C2BF5058F0048F976 /* SwiftUtils */,
+				55C1DC102E4CA4BE00AC3260 /* Core */,
+				559ECB9C2E4CBD500003578F /* Core */,
 			);
 			productName = ZenzaiMobile;
 			productReference = 5557C4362BF505470048F976 /* ZenzaiMobile.app */;
@@ -126,7 +123,7 @@
 			);
 			mainGroup = 5557C42D2BF505470048F976;
 			packageReferences = (
-				5557C4472BF5058F0048F976 /* XCRemoteSwiftPackageReference "AzooKeyKanaKanjiConverter" */,
+				559ECB9B2E4CBD500003578F /* XCLocalSwiftPackageReference "Core" */,
 			);
 			productRefGroup = 5557C4372BF505470048F976 /* Products */;
 			projectDirPath = "";
@@ -142,9 +139,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5557C4412BF505490048F976 /* Preview Assets.xcassets in Resources */,
-				5557C44F2BF5059E0048F976 /* ggml-model-Q8_0.gguf in Resources */,
 				5557C43E2BF505490048F976 /* Assets.xcassets in Resources */,
+				55C1DC0D2E4CA46700AC3260 /* ggml-model-Q5_K_M.gguf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +157,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		559ECB9F2E4CBD5D0003578F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 559ECB9E2E4CBD5D0003578F /* Core */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5557C4422BF505490048F976 /* Debug */ = {
@@ -215,13 +218,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -272,12 +276,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -298,6 +303,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZenzaiMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -321,12 +327,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ZenzaiMobile/Preview Content\"";
 				DEVELOPMENT_TEAM = 9S3UXHYP65;
 				ENABLE_PREVIEWS = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,7 +343,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZenzaiMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -363,32 +371,26 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		5557C4472BF5058F0048F976 /* XCRemoteSwiftPackageReference "AzooKeyKanaKanjiConverter" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ensan-hcl/AzooKeyKanaKanjiConverter";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		559ECB9B2E4CBD500003578F /* XCLocalSwiftPackageReference "Core" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Core;
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5557C4482BF5058F0048F976 /* KanaKanjiConverterModule */ = {
+		559ECB9C2E4CBD500003578F /* Core */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5557C4472BF5058F0048F976 /* XCRemoteSwiftPackageReference "AzooKeyKanaKanjiConverter" */;
-			productName = KanaKanjiConverterModule;
+			productName = Core;
 		};
-		5557C44A2BF5058F0048F976 /* KanaKanjiConverterModuleWithDefaultDictionary */ = {
+		559ECB9E2E4CBD5D0003578F /* Core */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5557C4472BF5058F0048F976 /* XCRemoteSwiftPackageReference "AzooKeyKanaKanjiConverter" */;
-			productName = KanaKanjiConverterModuleWithDefaultDictionary;
+			package = 559ECB9B2E4CBD500003578F /* XCLocalSwiftPackageReference "Core" */;
+			productName = Core;
 		};
-		5557C44C2BF5058F0048F976 /* SwiftUtils */ = {
+		55C1DC102E4CA4BE00AC3260 /* Core */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5557C4472BF5058F0048F976 /* XCRemoteSwiftPackageReference "AzooKeyKanaKanjiConverter" */;
-			productName = SwiftUtils;
+			productName = Core;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

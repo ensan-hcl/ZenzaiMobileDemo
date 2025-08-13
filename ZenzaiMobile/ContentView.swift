@@ -43,7 +43,13 @@ struct ContentView: View {
             learningType: .nothing,
             memoryDirectoryURL: .applicationDirectory,
             sharedContainerURL: .applicationDirectory,
-            zenzaiMode: .on(weight: Bundle.main.bundleURL.appending(path: "ggml-model-Q8_0.gguf"), inferenceLimit: 1),
+            zenzaiMode: .on(
+                weight: Bundle.main.bundleURL.appending(
+                    path: "ggml-model-Q5_K_M.gguf"
+                ),
+                inferenceLimit: 1,
+                personalizationMode: nil
+            ),
             metadata: nil
         )
     }
